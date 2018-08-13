@@ -14,4 +14,7 @@ To run:
 * Run command: grails run-app
 * Navigate to http://localhost:8080
 
-
+There are two test accounts:
+Account No. /  Pin Code
+* 1234 / 1234
+* 5678 / 5678
