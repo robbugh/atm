@@ -18,3 +18,5 @@ There are two test accounts:
 Account No. /  Pin Code
 * 1234 / 1234
 * 5678 / 5678
+
+Note: This was developed on a Linux system.
