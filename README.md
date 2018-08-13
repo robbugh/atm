@@ -7,6 +7,7 @@ To install:
   * Run command: sdk install grails 3.3.8
 * Install Groovy 2.4.1
   * Run command: sdk install groovy 2.4.1
+* Install Java 8
 
 To run:
 * Download the 'atm' repository to disk
