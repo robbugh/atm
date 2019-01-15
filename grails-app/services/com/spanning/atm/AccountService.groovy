@@ -11,12 +11,20 @@ class AccountService {
     }
 
     def deposit(String username, double amount) {
+        if (amount < 0.0) {
+            return
+        }
+        amount = amount.round(2)
         AccountDetails accountDetails = AccountDetails.findByUsername(username)
         accountDetails.balance += amount
-        accountDetails.save(flush:true)
+        accountDetails.save(flush: true)
     }
 
     def withdrawl(String username, double amount) {
+        if (amount < 0.0) {
+            return
+        }
+        amount = amount.round(2)
         AccountDetails accountDetails = AccountDetails.findByUsername(username)
         Date date = new Date().clearTime()
         DailyLimitDetails dailyLimitDetails = DailyLimitDetails.findByUsernameAndWithdrawlDate(username, date) ?: new DailyLimitDetails(username: username, withdrawlDate: date, amount: 0.0)
